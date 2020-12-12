@@ -1,24 +1,24 @@
-# README
+# Rails Boilerplate
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a very basic boilerplate that uses Devise for authentication, Administrate for dashboards, Bulma for styling, and a bunch more.
 
-Things you may want to cover:
+- Ruby version: 2.6.6
+- Rails version: 6.0.3
 
-* Ruby version
+__To add in a frontend:__ 
 
-* System dependencies
+```bash
 
-* Configuration
+# React
+rails webpacker:install:react
 
-* Database creation
+# Vue
+rails webpacker:install:vue
 
-* Database initialization
+# Angular
+rails webpacker:install:angular
 
-* How to run the test suite
+# Svelte
+rails webpacker:install:svelte
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
