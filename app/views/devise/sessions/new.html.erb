@@ -11,27 +11,27 @@
 
         <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
-        <div class="tabs-content">
-            <div id="login-tab-content" class="active">
-                <form class="login-form" action="" method="post">
-                    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Email', :class => 'input' %>
-                    <%= f.password_field :password, autocomplete: "current-password", :class => 'input', placeholder: 'Password' %>
+            <div class="tabs-content">
+                <div id="login-tab-content" class="active">
+                    <form class="login-form" action="" method="post">
+                        <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Email', :class => 'input' %>
+                        <%= f.password_field :password, autocomplete: "current-password", :class => 'input', placeholder: 'Password' %>
 
-                    <% if devise_mapping.rememberable? %>
-                        <div class="field">
-                            <%= f.check_box :remember_me, :class => 'checkbox'%>
-                            <%= f.label :remember_me %>
-                        </div>
-                    <% end %>
+                        <% if devise_mapping.rememberable? %>
+                            <div class="field">
+                                <%= f.check_box :remember_me, :class => 'checkbox' %>
+                                <%= f.label :remember_me %>
+                            </div>
+                        <% end %>
 
-                    <%= f.submit "Log in", :class => 'button is-primary' %>
+                        <%= f.submit "Log in", :class => 'button is-primary' %>
 
-                </form><!--.login-form-->
-                <div class="help-text">
-                    <p><a href="/users/password/new">Forget your password?</a></p>
-                </div><!--.help-text-->
-            </div><!--.login-tab-content-->
-        </div><!--.tabs-content-->
+                    </form><!--.login-form-->
+                    <div class="help-text">
+                        <p><a href="/users/password/new">Forget your password?</a></p>
+                    </div><!--.help-text-->
+                </div><!--.login-tab-content-->
+            </div><!--.tabs-content-->
         <% end %>
     </div><!--.form-wrap-->
 </section>

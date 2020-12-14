@@ -13,15 +13,15 @@
             <h2 class="title is-5">Reset your password</h2>
 
             <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-              <%= render "devise/shared/error_messages", resource: resource %>
+                <%= render "devise/shared/error_messages", resource: resource %>
 
-              <div class="field">
-                <%= f.email_field :email, autofocus: true, autocomplete: "email", :class => 'input', placeholder: 'Email' %>
-              </div>
+                <div class="field">
+                    <%= f.email_field :email, autofocus: true, autocomplete: "email", :class => 'input', placeholder: 'Email' %>
+                </div>
 
-              <div class="actions">
-                <%= f.submit "Send me password reset", :class => 'button is-primary'  %>
-              </div>
+                <div class="actions">
+                    <%= f.submit "Send me password reset", :class => 'button is-primary' %>
+                </div>
             <% end %>
         </div>
     </div>
